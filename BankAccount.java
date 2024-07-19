@@ -22,7 +22,7 @@ class BankAccount {
     void deposit(double amount) {
         if (amount != 0) {
             recentTransaction = amount;
-            displayRecent = "+" + "$" + recentTransaction + "deposit.";
+            displayRecent = "+" + "$" + recentTransaction + " deposit.";
             balance = balance + amount;
         } else {
             System.out.println(customerFirstName + ", you cannot deposit $0.");
@@ -33,7 +33,7 @@ class BankAccount {
     void withdraw(double amount) {
         if (amount != 0) {
             recentTransaction = amount;
-            displayRecent = "-" + "$" + recentTransaction + "withdraw.";
+            displayRecent = "-" + "$" + recentTransaction + " withdraw.";
             balance = balance - amount;
             System.out.println(customerFirstName + ", you have withdrawn " + amount
                     + ". Your current balance is now " + balance);
